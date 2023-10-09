@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #290059;
+}
+
+header {
+    height: 30vh;
+    margin-top: 20vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.bloques {
+    display: flex;
+    gap: 2em;
+    flex-flow: row;
+}
+
+.bloque_1 , .bloque_2 {
+    display: flex;
+    width: 15em;
+    height: 25em;
+    background-color: white;
+    border-radius: 6%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cabeza-1 , .cabeza-2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cabeza-1::after , 
+.cabeza-2::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font: bold;
+    font-size: 2em;
+    color: #1E0042;
+}
+
+ul{
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgb(65, 64, 64);
+}
+
+.bloque_1::after ,
+.bloque_2::after {
+    text-align: center;
+    content: "Select Plan";
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    height: 30px;
+    background-color: #004AAD;
+    border-radius: 6%;
+    font-size: 1.5em;
+    position: absolute;
+    padding: 0.5em;
+    margin-top: 17em;
+}
